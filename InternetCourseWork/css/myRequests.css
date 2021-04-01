@@ -1,0 +1,56 @@
+* {box-sizing: border-box;}
+@media (min-width: 668px) {
+  main {
+    width:500px;
+	
+  }
+}
+
+@media (min-width: 992px) {
+ main{
+  width:700px;}
+	.row {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+  
+  }
+ 
+}
+
+@media (min-width: 1100px) {
+  main{
+    width:1000px;
+  }
+  
+  
+  }
+
+
+.Requests{
+	
+  text-align: center;
+  padding: 10px ;
+  font-size: 10px;
+  
+}
+.Requests img{
+	
+	width: 150px;
+	height:150px;
+}
+ 
+footer{
+	
+	background-color:#A9A9A9;
+	text-align:center;
+	
+  
+
+	
+}
+
+
+[class^="graph"] {padding:0px 50px;
+		width:100%;}
+[class^="nav-"] {padding:0px 50px;}

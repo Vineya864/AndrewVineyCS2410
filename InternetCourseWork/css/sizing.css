@@ -1,0 +1,43 @@
+* {box-sizing: border-box;}
+
+
+
+
+
+@media (min-width: 768px) {
+  main {
+    width:500px;
+	
+  }
+}
+
+@media (min-width: 992px) {
+ main{
+  width:700px;}
+	.row {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+  
+  }
+ 
+}
+
+@media (min-width: 1200px) {
+  main{
+    width:900px;
+  }
+
+ 
+}
+footer{
+	
+	background-color:#A9A9A9;
+	text-align:center;
+	
+  
+
+	
+}
+[class^="nav-"] {padding:0px 50px;}
+

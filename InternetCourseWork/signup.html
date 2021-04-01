@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+	<meta charset ="UTF-8"/>
+	  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/sizing.css" rel="stylesheet" />
+<script src="components/Navbar.js" type="text/javascript" defer></script>
+<script src="components/footer.js" type="text/javascript" defer></script>
+		<script src= "js/validate_password.js"></script>
+				<script src= "js/mainScriptOne.js"></script>
+	<title> adoption website		
+	</title>
+</head>
+
+<body>
+<header-component></header-component>
+	
+	<main>
+	<section id="account-creation">
+	<h1> New Account</h1>
+		<form method="post" action="signUp.php">
+			<label for= "Name"> Name</label> 
+			<input type="text" id="Name" name="Name"
+				placeHolder="Name"
+				required
+				title="Name"/>
+	<br/><br/>
+			
+		<label for= "email"> Email Address </label>
+		<input type="Email" id="email" name="email"
+			placeholder="Valid Email Address"
+			required
+				pattern=".+(\.edu|\.ac\.uk|\.com)"
+			title="email" />
+		
+			
+			<br/><br/>
+		<label for= "pass"> Password </label>
+		<input type="password" id="pass" name="pass"
+			placeholder="Password"
+			required 
+			title="password"/>
+   
+   <br/><br/>
+		<input type="submit"
+		name="addUser"
+			value="Sign Up" />
+	
+	</form>
+	</section>
+	</main>
+	<footer-component></footer-component>
+	
+</html>
