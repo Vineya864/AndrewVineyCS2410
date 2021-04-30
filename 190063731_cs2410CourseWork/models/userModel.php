@@ -120,6 +120,7 @@ class UserModel {
 	  */
 	  public function addUser($email,$pass, $name,$type){
 			$this->Connect();
+      if($this->getUserByProccesedEmail($email)==null){
 			$query = $this->pdo->prepare("INSERT INTO`users` (`Email`, `Password`, `Name`, `Type`) VALUES(?,?,?,?)");
 			$query->execute([$email,$pass,$name,$type]);
 
@@ -140,6 +141,11 @@ class UserModel {
 			}
 		  
 	  }
+      else{
+      echo("Email in use");
+      return false;
+      }
+      }
 	  
 	
 	 /**
